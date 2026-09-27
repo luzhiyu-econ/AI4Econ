@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+:root {
+  --md-primary-fg-color: #12383d;
+  --md-accent-fg-color: #b54e35;
+  --md-default-bg-color: #faf8f3;
+  --md-default-fg-color: #1b2d30;
+  --md-code-bg-color: #f0ede5;
+}
+
+body { background: #faf8f3; }
+.md-header { box-shadow: none; border-bottom: 1px solid #d6d0c3; }
+.md-header__title, .md-nav__title { font-weight: 700; letter-spacing: .01em; }
+.md-content { max-width: 48rem; }
+.md-typeset { font-size: .84rem; line-height: 1.75; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  color: #12383d;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+.md-typeset h1 { font-size: 2.65rem; line-height: 1.05; }
+.md-typeset h2 { font-size: 1.8rem; margin-top: 2.2em; }
+.md-typeset a { text-decoration-color: #b54e35; text-underline-offset: .16em; }
+.md-typeset a:hover { color: #b54e35; }
+.md-nav__link--active { color: #b54e35; font-weight: 700; }
+.md-typeset .book-hero {
+  margin: 0 0 2.6rem;
+  padding: 2.8rem 0 2.3rem;
+  border-top: 3px solid #b54e35;
+  border-bottom: 1px solid #d6d0c3;
+}
+.md-typeset .book-hero .eyebrow {
+  color: #9a4935; font-size: .72rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.md-typeset .book-hero h1 { font-size: clamp(3.2rem, 7vw, 5.5rem); margin: .25rem 0; }
+.md-typeset .book-hero p { max-width: 36rem; font-size: 1.1rem; line-height: 1.5; }
+.md-typeset .chapter-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.md-typeset .chapter-card {
+  display: block; min-height: 9rem; padding: 1.2rem;
+  border: 1px solid #d6d0c3; background: #fffdf8; text-decoration: none;
+}
+.md-typeset .chapter-card:hover { border-color: #b54e35; background: #f8f2e8; }
+.md-typeset .chapter-card strong { display: block; color: #12383d; font-size: 1.05rem; }
+.md-typeset .chapter-card span { display: block; margin-top: .5rem; color: #566467; }
+@media (max-width: 700px) {
+  .md-typeset .chapter-grid { grid-template-columns: 1fr; }
+  .md-typeset .book-hero { padding-top: 1.5rem; }
+}
