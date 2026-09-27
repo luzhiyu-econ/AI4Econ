@@ -1,6 +1,6 @@
 # AI4Econ
 
-An online book tutorial on AI workflows for economics research. Read it at **https://luzhiyu-econ.github.io/AI4Econ/**.
+An online book tutorial on AI workflows for economics research. Read it at **https://zhiyulu.org/AI4Econ/**.
 
 The current edition walks through a policy-text annotation example: defining the observation unit, writing an annotation rule, evaluating labels, and using the resulting measure in economic analysis.
 
